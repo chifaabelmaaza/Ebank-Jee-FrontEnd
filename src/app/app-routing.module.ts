@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AccountsComponent } from './accounts/accounts.component';
-import { CustomerAccountsComponent } from './customer-accounts/customer-accounts.component';
-import { CustomersComponent } from './customers/customers.component';
-import { EditCustomerComponent } from './edit-customer/edit-customer.component';
-import { NewCustomerComponent } from './new-customer/new-customer.component';
+import { AccountsComponent } from './Pages/accounts/accounts.component';
+import { CustomerAccountsComponent } from './Pages/customer-accounts/customer-accounts.component';
+import { CustomersComponent } from './Pages/customers/customers.component';
+import { EditCustomerComponent } from './Pages/edit-customer/edit-customer.component';
+import { NewCustomerComponent } from './Pages/new-customer/new-customer.component';
 
 const routes: Routes = [
   { path: "customers", component: CustomersComponent },

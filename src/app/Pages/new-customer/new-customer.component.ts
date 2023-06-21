@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { catchError, throwError } from 'rxjs';
-import { Customer } from '../model/customer.model';
-import { CustomerService } from '../services/customer.service';
+import { Customer } from '../../model/customer.model';
+import { CustomerService } from '../../services/customer.service';
 declare let alertify: any;
 @Component({
   selector: 'app-new-customer',

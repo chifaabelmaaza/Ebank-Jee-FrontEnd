@@ -3,8 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { catchError, map, Observable, throwError } from 'rxjs';
-import { Customer } from '../model/customer.model';
-import { CustomerService } from '../services/customer.service'
+import { Customer } from '../../model/customer.model';
+import { CustomerService } from '../../services/customer.service'
 declare const alertify: any;
 
 @Component({

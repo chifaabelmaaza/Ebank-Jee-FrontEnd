@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Customer } from '../model/customer.model';
-import { CustomerService } from '../services/customer.service';
+import { Customer } from '../../model/customer.model';
+import { CustomerService } from '../../services/customer.service';
 declare let alertify: any;
 
 @Component({

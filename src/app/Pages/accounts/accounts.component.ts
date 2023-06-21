@@ -2,8 +2,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { catchError, Observable, throwError } from 'rxjs';
-import { AccountDetails } from '../model/account.model';
-import { AccountService } from '../services/account.service';
+import { AccountDetails } from '../../model/account.model';
+import { AccountService } from '../../services/account.service';
 declare const alertify: any;
 
 
