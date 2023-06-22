@@ -1,6 +1,6 @@
 <ng-container *ngIf="accounts | async as accountsList; else failure">
 
-    <div class="container">
+    <div >
         <div class="alert alert-warning my-4" *ngIf="accountsList.length==0">
             This customer doesn't have any account!
             <a routerLink="/customers" class="link-secondary">back to customers.</a>

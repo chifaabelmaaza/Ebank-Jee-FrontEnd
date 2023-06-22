@@ -17,9 +17,12 @@ import { MatDividerModule} from '@angular/material/divider';
 import { NewCustomerComponent } from './Pages/new-customer/new-customer.component';
 import { CustomerAccountsComponent } from './Pages/customer-accounts/customer-accounts.component';
 import { EditCustomerComponent } from './Pages/edit-customer/edit-customer.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatListModule } from '@angular/material/list';
 import { SideBarComponent } from './init/side-bar/side-bar.component';
+import { DashboardComponent } from './Pages/dashboard/dashboard.component';
+
 
 @NgModule({
   declarations: [
@@ -31,6 +34,7 @@ import { SideBarComponent } from './init/side-bar/side-bar.component';
     CustomerAccountsComponent,
     EditCustomerComponent,
     SideBarComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +49,7 @@ import { SideBarComponent } from './init/side-bar/side-bar.component';
     MatDividerModule,
     MatListModule,
     MatExpansionModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
