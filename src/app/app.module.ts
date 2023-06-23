@@ -21,14 +21,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatListModule } from '@angular/material/list';
 import { SideBarComponent } from './init/side-bar/side-bar.component';
-import { MainComponent } from './Pages/Dashboard/main/main.component';
-import { TopWidgetsComponent } from './Pages/Dashboard/top-widgets/top-widgets.component';
-import { OpperationByMonthComponent } from './Pages/Dashboard/opperation-by-month/opperation-by-month.component';
-import { OpperationByCustomerComponent } from './Pages/Dashboard/customers-per-city/opperation-by-customer.component';
-import { LastFewTransactionsComponent } from './Pages/Dashboard/last-few-transactions/last-few-transactions.component';
-import { TopThreeAccountsComponent } from './Pages/Dashboard/top-three-accounts/top-three-accounts.component';
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { ChartModule } from 'angular-highcharts';
 
 @NgModule({
   declarations: [
@@ -40,12 +34,6 @@ import { ChartModule } from 'angular-highcharts';
     CustomerAccountsComponent,
     EditCustomerComponent,
     SideBarComponent,
-    MainComponent,
-    TopWidgetsComponent,
-    OpperationByMonthComponent,
-    OpperationByCustomerComponent,
-    LastFewTransactionsComponent,
-    TopThreeAccountsComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,7 +50,6 @@ import { ChartModule } from 'angular-highcharts';
     MatExpansionModule,
     MatTooltipModule,
     FontAwesomeModule,
-    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
