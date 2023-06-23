@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Customer } from '../../model/customer.model';
 import { CustomerService } from '../../services/customer.service';
@@ -12,13 +12,13 @@ declare let alertify: any;
 })
 export class EditCustomerComponent implements OnInit {
   customerId!: number
-  editCustomerFormGroup!: UntypedFormGroup
+  editCustomerFormGroup!: FormGroup
   customer!: Customer
   errorMessage!: string;
 
   constructor(
     private route: ActivatedRoute,
-    private formBuilder: UntypedFormBuilder,
+    private formBuilder: FormBuilder,
     private router: Router,
     private customerService: CustomerService
   ) {

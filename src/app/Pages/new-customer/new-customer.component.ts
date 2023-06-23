@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { catchError, throwError } from 'rxjs';
 import { Customer } from '../../model/customer.model';
@@ -12,12 +12,12 @@ declare let alertify: any;
 })
 export class NewCustomerComponent implements OnInit {
 
-  newCustomerFormGroup!: UntypedFormGroup
+  newCustomerFormGroup!: FormGroup
   errorMessage!: string
 
   constructor(
     private customerService: CustomerService,
-    private formBuilder: UntypedFormBuilder,
+    private formBuilder: FormBuilder,
     private router: Router
   ) { }
 

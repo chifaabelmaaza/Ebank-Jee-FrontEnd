@@ -1,6 +1,6 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { catchError, Observable, throwError } from 'rxjs';
 import { AccountDetails } from '../../model/account.model';
 import { AccountService } from '../../services/account.service';
@@ -13,8 +13,8 @@ declare const alertify: any;
   styleUrls: ['./accounts.component.scss']
 })
 export class AccountsComponent implements OnInit {
-  accountFromGroup!: UntypedFormGroup
-  operationFormGroup!: UntypedFormGroup
+  accountFromGroup!: FormGroup
+  operationFormGroup!: FormGroup
   currentPage: number = 0
   size: number = 5
   accountObservable!: Observable<AccountDetails>
@@ -22,7 +22,7 @@ export class AccountsComponent implements OnInit {
 
   constructor(
     private accountService: AccountService,
-    private formBuilder: UntypedFormBuilder
+    private formBuilder: FormBuilder
   ) { }
 
   ngOnInit(): void {

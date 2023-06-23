@@ -119,5 +119,6 @@
     "@schematics/angular:component": {
       "style": "scss"
     }
-  }
+  },
+  "defaultProject": "digital-banking-web"
 }
