@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { catchError, map, Observable, throwError } from 'rxjs';
 import { Customer } from '../../model/customer.model';
@@ -16,11 +16,11 @@ export class CustomersComponent implements OnInit {
 
   customers!: Observable<Array<Customer>>
   errorMessage!: object
-  searchFormGroup!: FormGroup
+  searchFormGroup!: UntypedFormGroup
 
   constructor(
     private customerService: CustomerService,
-    private formBuilder: FormBuilder,
+    private formBuilder: UntypedFormBuilder,
     private router: Router
   ) { }
 
