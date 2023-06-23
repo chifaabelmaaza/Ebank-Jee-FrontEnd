@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './init/navbar/navbar.component';
 import { CustomersComponent } from './Pages/customers/customers.component';
 import { AccountsComponent } from './Pages/accounts/accounts.component';
 import { HttpClientModule } from "@angular/common/http";
@@ -23,17 +22,29 @@ import { MatListModule } from '@angular/material/list';
 import { SideBarComponent } from './init/side-bar/side-bar.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MainComponent } from './Pages/Dashboard/main/main.component';
+import { CustomersByCityComponent } from './Pages/Dashboard/customers-by-city/customers-by-city.component';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { TopWidgetComponent } from './Pages/Dashboard/top-widget/top-widget.component';
+import { MobileappVsWebsiteComponent } from './Pages/Dashboard/mobileapp-vs-website/mobileapp-vs-website.component';
+import { TransactionPerAgeComponent } from './Pages/Dashboard/transaction-per-age/transaction-per-age.component';
+import { HeatmapTransactionsComponent } from './Pages/Dashboard/heatmap-transactions/heatmap-transactions.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     CustomersComponent,
     AccountsComponent,
     NewCustomerComponent,
     CustomerAccountsComponent,
     EditCustomerComponent,
     SideBarComponent,
+    MainComponent,
+    CustomersByCityComponent,
+    TopWidgetComponent,
+    MobileappVsWebsiteComponent,
+    TransactionPerAgeComponent,
+    HeatmapTransactionsComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,6 +61,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatExpansionModule,
     MatTooltipModule,
     FontAwesomeModule,
+    NgApexchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

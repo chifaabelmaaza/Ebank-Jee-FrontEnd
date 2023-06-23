@@ -5,8 +5,10 @@ import { CustomerAccountsComponent } from './Pages/customer-accounts/customer-ac
 import { CustomersComponent } from './Pages/customers/customers.component';
 import { EditCustomerComponent } from './Pages/edit-customer/edit-customer.component';
 import { NewCustomerComponent } from './Pages/new-customer/new-customer.component';
+import { MainComponent } from './Pages/Dashboard/main/main.component';
 
 const routes: Routes = [
+  { path: "dashboard", component: MainComponent },
   { path: "customers", component: CustomersComponent },
   { path: "accounts", component: AccountsComponent },
   { path: "new-customer", component: NewCustomerComponent },
