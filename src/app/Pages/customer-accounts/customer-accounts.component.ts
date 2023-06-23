@@ -8,7 +8,7 @@ import { CustomerService } from '../../services/customer.service';
 @Component({
   selector: 'app-customer-accounts',
   templateUrl: './customer-accounts.component.html',
-  styleUrls: ['./customer-accounts.component.css']
+  styleUrls: ['./customer-accounts.component.scss']
 })
 export class CustomerAccountsComponent implements OnInit {
   customerId!: number
