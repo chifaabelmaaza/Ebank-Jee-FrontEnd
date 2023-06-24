@@ -18,15 +18,15 @@ __Go the folder__
 ```
 Ebank-Jee-FrontEnd
 ```
-__Installez les dépendances__
+__Install dependencies__
 ```
 npm install
 ```
-__Lancez l'application frontend__
+__Launch the application__
 ```
 ng serve --open
 ```
-> Note: Assurez-vous d'avoir Node.js et Angular CLI installés sur votre machine pour exécuter l'application frontend.
+> Note: Make sure you have Node.js and Angular CLI installed on your machine to run the frontend application.
 
 ## Key Features
 
