@@ -49,20 +49,39 @@ ng serve --open
 
 We are excited to showcase our Angular frontend project and invite you to explore the codebase and experience the seamless user interface we have developed for our digital banking application.
 
+##Routes 
+
+![image](sceans/routage.png)
+
 ##Screans 
+
 __Dashboard__
 
+![image](sceans/screencapture-localhost-4200-dashboard-2023-06-23-18_25_50.png)
+
 __Customers__
-1- List 
 
-2- View Customer's accounts
+1. List
 
-3- Add Customer 
+   ![image](sceans/customers.png)
 
-4- Edit Customer
+2. View Customer's accounts
+
+   ![image](sceans/accountsForcustomer.png)
+
+3. Add Customer
+
+   ![image](sceans/addCustomer.png)
+
+4. Edit Customer
+
+   ![image](sceans/editCustomer.png)
 
 __Accounts__
+
 Search for Account's operations history
+
+![image](sceans/CustomersAccounts.png)
 
 
 > Note: Please refer to the project documentation for detailed instructions on setting up and running the frontend application. Feel free to reach out to us with any questions or feedback.
