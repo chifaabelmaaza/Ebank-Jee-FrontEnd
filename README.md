@@ -49,11 +49,11 @@ ng serve --open
 
 We are excited to showcase our Angular frontend project and invite you to explore the codebase and experience the seamless user interface we have developed for our digital banking application.
 
-##Routes 
+## Routes 
 
 ![image](sceans/routage.png)
 
-##Screans 
+## Screans 
 
 __Dashboard__
 
